@@ -1,0 +1,170 @@
+
+body{
+    background-color: white;
+}
+
+.content{
+    font-family: 'Poppins', sans-serif;
+
+}
+.content-main {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex: 0 0 auto;
+    margin-right: 20px; /* Adjust margin as needed */
+    margin-top: 2rem;
+}
+.logo img{
+    height: 2rem;
+    border: .2rem solid rgb(68, 6, 83);
+}
+.info {
+    flex: 1 1 auto;
+    font-weight: 400;
+}
+
+/* Additional styling for consistency */
+.logo img {
+ width: 73%;
+ height: 73%;
+}
+.info h3{
+    font-size: 3rem;
+    border: .2rem solid rgb(68, 6, 83);
+    padding-left: 12rem;
+    margin-top: .2rem;
+    
+}
+.info h4{
+    font-size:  1.5rem;
+}
+
+.info h3, .info h4 {
+    margin-top: 0;
+}
+
+.info p {
+    margin-bottom: 15px;
+    font-size: large;
+} 
+
+/* visit our site */
+.btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 36px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(68, 6, 83);
+    color: #ffffff;
+    border: none;
+    margin-left: 45rem;
+    margin-top: 4rem;
+   
+  }
+  
+  .btn:hover {
+    background-color: #003399;
+  }
+
+.home-sci{
+    bottom: 0rem;
+    width: 170px;
+    display: flex;
+    justify-content:space-between;
+    
+  }
+
+
+  /* hover */
+  .home-sci a{
+    padding-left: 0rem;
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    border-spacing: 1rem;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: .2rem solid rgb(68, 6, 83);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(64, 52, 75);
+    z-index: 1;
+    transition: 0.3s;
+  }
+  .home-sci a:hover{
+    color: rgb(64, 52, 75);
+  }
+  .home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    border-radius: 50%;
+    width: 0;
+    height: 100%;
+    background: #cba3f5;
+    z-index: -1;
+    transition: .4s;
+  }
+  .home-sci a:hover::before{
+    width: 100%;
+  }
+  #paragraph{
+    margin-top: 3rem;
+  }
+  footer{
+    margin-top: 2rem;
+  }
+  footer p u{
+    text-align: left
+  }
+  footer p{
+    text-align: center;
+    margin-left: 6rem;
+    margin-top: 5rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .info h3 {
+        padding-left: 0;
+    }
+
+    .btn {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .info h3 {
+        font-size: 2rem;
+    }
+
+    .info h4 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        margin-left: 0;
+    }
+
+    .home-sci a {
+        width: 40px;
+        height: 40px;
+    }
+}
