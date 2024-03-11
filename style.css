@@ -130,14 +130,17 @@ body{
   }
   footer{
     margin-top: 2rem;
+   
   }
   footer p u{
     text-align: left
   }
   footer p{
     text-align: center;
-    margin-left: 6rem;
-    margin-top: 5rem;
+    color: whitesmoke;
+    margin-top: 2rem;
+    background-color:rgb(68, 6, 83);
+    padding-bottom: 7px;
   }
 
   @media only screen and (max-width: 768px) {
